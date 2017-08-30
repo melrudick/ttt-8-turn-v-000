@@ -5,9 +5,11 @@ def display_board(board)
   puts "-----------"
   puts " #{board[6]} | #{board[7]} | #{board[8]} "
 end
+
 def input_to_index(user_input)
   user_input.to_i-1
 end
+
 def valid_move?(board, index)
   if board index.between?(0,8) && !position_taken? == 0
     true
@@ -15,10 +17,10 @@ def valid_move?(board, index)
     false
   end
 end
-def position_taken?(board, index)
-  if board[index] == "X" || board[index] == "O"
-    true
-  else
-    false
-  end
-end
+# def position_taken?(board, index)
+#   if board[index] == "X" || board[index] == "O"
+#     true
+#   else
+#     false
+#   end
+# end
