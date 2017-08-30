@@ -39,5 +39,5 @@ def turn(user_input)
     display_board(board)
    else
      turn(board)
-
+end
 end
