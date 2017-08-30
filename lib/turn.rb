@@ -26,13 +26,16 @@ def valid_move?(board, index)
   end
 end
 
-def move(dog, index, value)
-  dog[index] = value
+def move(board, index, value)
+  board[index] = value
 end
 
 def turn(user_input)
   puts "Please enter 1-9:"
   user_input = gets.strip
   index = input_to_index(user_input)
-
+  if valid_move?(board, index)
+    move(board, index, value)
+  else
+    turn(board)
 end
