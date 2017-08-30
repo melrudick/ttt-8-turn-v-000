@@ -12,3 +12,4 @@ def valid_move?(user_input)
   if user_input index.between?(0,8) && !position_taken?
     true
   end
+end
