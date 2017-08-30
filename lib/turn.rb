@@ -26,5 +26,8 @@ def valid_move?(board, index)
   end
 end
 
-def move(board, index, value)
+
+
+def move(dog, index, value)
+  dog[index] = value
 end
